@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/newsmania', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://ankitkumar92771:JC8FnYA0OWbVQOVJ@new-test.iv24b60.mongodb.net/?retryWrites=true&w=majority&appName=new-test', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
